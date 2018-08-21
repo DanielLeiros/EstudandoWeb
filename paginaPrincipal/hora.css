@@ -1,0 +1,22 @@
+@font-face {
+  font-family: digital-7;
+  src: url(digital-7.ttf);
+}
+
+#visor {
+  text-align: center;
+  margin-top: 250px;
+}
+
+output {
+  text-align: center;
+  font-family: digital-7;
+  color:black;
+ }
+#data {
+  font-size: 40px;
+}
+
+#hora{
+  font-size: 60px;
+}

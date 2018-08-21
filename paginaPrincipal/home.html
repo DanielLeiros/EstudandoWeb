@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Front-Page</title>
+    <link rel="stylesheet" type="text/css" href="hora.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="hora.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <!-- ########################## -->
+  <body>
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+      <a href="https://pt.wikipedia.org/wiki/Luciano_Pavarotti"><img src="../paginaPrincipal/img/Pavarotti12.jpg" alt="Luciano O Pavinha" title="Avatar - Luciano Pavarotti" style="margin-top:200px; margin-left:18px; width:80%; border-radius:50%;"></a>
+      <ul><li>O mito</li></ul>
+      <a href="../paginaPrincipal/CalculadoraBasicaWeb/calculadora.html" class="w3-bar-item w3-button" style="">Calculadora</a>
+      <a href="../paginaPrincipal/mapa/mapa.html" class="w3-bar-item w3-button">Mapa</a>
+      <a href="https://www.youtube.com/watch?v=S4bL2uXv0rs" class="w3-bar-item w3-button">Um vídeo Show!</a>
+    </div>
+
+    <div class="w3-main" style="margin-left:200px">
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+              <h1>Hey bro,</h1>
+              <h3>estamos aqui para mais um dia aprendendo front-end development!</h3>
+              <h3>Aproveite a plataforma e seja uma pessoa legal para o planeta...</h3>
+            </div>
+          </div>
+
+          <div class="w3-container">
+            <!-- mostrador dazoras -->
+            <article id="visor">
+              <div>
+                  <output id="hora" ></output>
+              </div>
+              <div>
+                  <output id="data" ></output>
+              </div>
+            </article>
+          </div>
+
+    </div>
+
+
+
+
+
+  </body>
+</html>
