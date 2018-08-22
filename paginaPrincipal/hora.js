@@ -33,3 +33,15 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
+$(document).ready(function(){
+  $("#horaLink").click(function(){
+    $("#visorSpan").slideDown(3000);
+    $("#horaLink").hide();
+  });
+  $("#visorSpan").click(function(){
+    $("#visorSpan").slideUp(5000);
+    setTimeout("$('#horaLink').show()",5001);
+  });
+});
+ 
+ 

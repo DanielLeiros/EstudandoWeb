@@ -8,6 +8,7 @@
     <script type="text/javascript" src="hora.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <!-- ########################## -->
   <body>
@@ -34,12 +35,17 @@
           <div class="w3-container">
             <!-- mostrador dazoras -->
             <article id="visor">
-              <div>
-                  <output id="hora" ></output>
-              </div>
-              <div>
-                  <output id="data" ></output>
-              </div>
+              <a id="horaA" href="#" style="text-decoration: none; outline: none ">
+                <span id="horaLink">QUE HORAS SAO?</span>
+                <span id="visorSpan">
+                  <div>
+                      <output id="hora" ></output>
+                  </div>
+                  <div>
+                      <output id="data" ></output>
+                  </div>
+                </span>
+              </a>
             </article>
           </div>
 
