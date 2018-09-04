@@ -1,0 +1,67 @@
+/*----------------------------Flex box----------------------------------*/
+#topo {
+	font-size: 28px;
+	color: white;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	background-color: purple;
+}
+
+#flex > div{
+	background-color: grey;
+	border: 1px solid blue;
+	border-radius: 5px;
+	flex: 1;
+	margin: 4px;
+}
+
+#flex {
+	display: flex;
+}
+
+/*---------------------------Grid-----------------------------------*/
+#topoGrid { 
+	background-color: black;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	padding: 20px 0 20px 0;
+}
+#grid > div {
+	background-color: cyan;
+	border: 3px dotted green;
+	border-radius: 4px;
+	margin: 4px	;
+	padding: 3px;
+}
+#grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 108px;
+	/*grid-gap: 10px;*/
+}
+/*---------------------------Ex 2-----------------------------------*/
+#blogInit {
+	background-color: rgb(207,232,220);
+	border: 1px solid blue;
+	border-radius: 3px;
+	padding: 8px;
+}
+
+#blogEnd {
+	background-color: rgb(207,232,220);
+	border: 1px solid blue;
+	border-radius: 3px;
+	padding: 8px;
+}
+#gridBlog {
+	display: grid;
+	grid-template-columns: 350px auto; 
+}
+#gridBlog > aside,article{
+	margin:5px;
+}
+
+#aside1 {
+	border-right: 1px solid gray;
+}
