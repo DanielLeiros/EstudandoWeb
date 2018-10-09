@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="gameStyle.css">
+
+		<title>Estourando balões</title>
+
+
+	</head>
+
+	<body>
+		<div id="jogo">
+			<div id="sideBar">
+				<div>
+					<img src="./imagens/balao_azul_grande.png">
+					<span id="contadorInteiros"></span>
+				</div>
+			
+				<div>
+					<img src="./imagens/balao_azul_grande_estourado.png">
+					<span id="contadorEstourados"></span>
+
+				</div>
+			
+				<div>
+					<img src="./imagens/cronometro.png">
+				</div>
+			</div>
+			<div id="playArea">
+				<img src="./imagens/cenario.png">
+			</div>
+		</div>
+	</body>
+	
+</html>
+
+<script type="text/javascript">
+	var nivel = window.location.search;
+	nivel = nivel.replace("?", "");
+
+	var numBaloes
+	var tempo
+	var areaBaloes = document.getElementById('playArea')
+	var baloes = document.createElement("img")
+	baloes.src = "./imagens/balao_azul_pequeno.png"
+	if(nivel == 1){
+		numBaloes = 60
+		tempo = 60
+	}else if(nivel == 2){
+		numBaloes = 120
+		tempo = 120
+	}else{
+		numBaloes = 180
+		tempo = 120
+	}
+
+	for(i=0; i < numBaloes ; i++){
+		console.log('oaisdjfs')
+		document.getElementById('playArea').appendChild(baloes);
+	}
+
+
+
+</script>
